@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    color: #007bff;
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeIn 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#student-list .card {
+    margin-bottom: 15px;
+}
+
+#student-list .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#student-list .card-body span {
+    flex-grow: 1;
+}
+
+#student-list .btn {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        flex-direction: column;
+    }
+
+    #student-list .card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #student-list .btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
